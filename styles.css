@@ -1,0 +1,181 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    color: #404040;
+    text-align: center;
+    width:100vw;
+    height:100vh;
+}
+
+
+/* =================
+   Typography 
+   ================= */
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 2em 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    color: #F18119;
+    font-weight: 900;
+    text-transform: uppercase;
+    order: -1;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 0.5px;
+}
+
+strong { font-weight: 900; }
+
+.light {
+    color:#6f6d6d;
+}
+
+.main-content h2 , .main-content h2+p {
+    font-size: 1.5em;
+    box-sizing: border-box;
+}
+
+/* =================
+   Intro section 
+   ================= */
+   
+.intro {
+    background-image: url(bbq.jpg);
+    background-size: cover;
+    background-color: #404040;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+/* =================
+   Buttons
+   ================= */
+
+    input, button {
+        border-radius: 3px;
+        width:80%;
+        height:35px;
+        margin:3%;
+
+    }
+
+
+    #input-one, #input-two {
+        text-align: center;
+        border:1px solid #6f6d6d;
+    }
+
+    #register {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.45rem;
+        color: #fff;
+        font-weight: 900;
+        background-image: linear-gradient(to left, #ff713b, #ffa51d);
+        border: 0;
+        padding:1.15em;
+        cursor:pointer;
+        transition:300ms;
+    }
+
+    #register:hover {
+        color:#6e3500;
+        transform:scale(1.1);
+    }
+
+
+
+/* =================
+   main-content section 
+   ================= */
+   
+.main-content {
+    padding: 2em 1em;
+}
+
+
+/* =================
+   media queries 
+   ================= */
+   
+@media (min-width: 800px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    .main-content {
+        font-size: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    body {
+        display:flex;
+    }
+    
+    .intro {
+        width:60%;
+        box-shadow: 10px 4px 8px rgba(0,0,0,0.2) ;
+    }
+    
+    .main-content {
+        width:40%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input, button {
+        border-radius: 3px;
+        width:100%;
+        height:30px;
+        margin:10%;
+        transform: scale(1.5);
+    }
+}
+   
